@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>class2</title>
+	<style type="text/css">
+	.red{color:red;}//类选择器优先级更高
+	.green{color:green;}
+	.font22{font-size:27px;}
+		.one{line-hight:18px;}
+	p{
+	font-size:44px;//p标签优先级较低
+	text-decoration:underline;
+	font-family:"微软雅黑";
+	text-shadow:10px 10px 10px blue;//设置阴影
+	}
+		p.special{color:aqua;}
+	#bold1 {font-size:5px;}//id选择器优先级高于类选择器
+	#bold2 {font-size:50px;}
+	</style>
+</head>
+
+<body>
+	<h2 class="red">标题</h2>
+	<p class="green font22">第一段</p>
+	<p class="font22" id="bold2">第二段</p>
+	<p id="bold1">第三段</p>
+	<p>第四段</p>
+	<p class="one">第五段</p>
+	<p class="special">第六行</p>
+	
+</body>
+</html>
